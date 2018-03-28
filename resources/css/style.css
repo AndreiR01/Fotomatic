@@ -465,12 +465,15 @@ footer .copyright {
       /* Hyperlinks Section */
   a:hover {
     text-decoration: none;
+    color:#4A4A4A;
       }
   a:active {
     text-decoration: none;
+    color:#4A4A4A;
      }
   a:link {
       text-decoration: none;
+      color:#4A4A4A;
       }
 
   a:visited {
