@@ -4,7 +4,9 @@ html {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
-
+body{
+  margin: 0px;
+}
 .main-content {
   position: relative;
   top: 5.3125rem; /* To offset for fixed header. */
@@ -100,10 +102,15 @@ header .mobile {
     background-color: #9dc20b;
     line-height: 1.6;
     color: white;
-
   }
-
 }
+
+@media only screen and (max-width:750px){
+  .hidden-nav-under-760px {
+    display: none ;
+  }
+}
+
 @media only screen and (max-width:450px){
   header .desktop {
     display: none;
@@ -148,7 +155,7 @@ header .mobile {
   justify-content: flex-start;
   align-items: flex-start;
   height: 43.5rem;
-  background: url("E:/Build Websites from Scratch/projects/Project Fotomatic/resources/images/banner-landingpage.jpg") center center / cover no-repeat;
+  background: url("../images/banner-landingpage.jpg ") center center / cover no-repeat;
 }
 
 #sign-up-cta {
@@ -399,12 +406,7 @@ header .mobile {
   padding: 5rem 0;
 }
 
-#quotes-section .content {
-  display: flex;
-  justify-content:center;
-  align-items: center;
-  vertical-align: middle;
-}
+
 
 #quotes-section .quote {
   padding-right: 1.875rem;
@@ -418,26 +420,25 @@ header .mobile {
 #quotes-section .quote-citation {
   height: 1.875rem;
 }
-img.quote-citation {
-  vertical-align: middle;
-}
+
 
 
 @media only screen and (max-width: 760px) {
-  #quotes-section content {
+  #quotes-section .content {
     padding: 1.875rem .625rem;
   }
 
-  #quotes-section quote {
+  #quotes-section .quote {
     font-size: 1.5rem;
     line-height: 1.4;
   }
 
-  #quotes-section quote-citation {
+  #quotes-section .quote-citation {
     display: block;
     padding-top: 1rem;
     margin: auto;
   }
+
 }
 
 /* Footer */
